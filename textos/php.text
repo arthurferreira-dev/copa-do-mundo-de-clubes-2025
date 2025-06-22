@@ -1,0 +1,37 @@
+Anotações de Variáveis no PHP in [../index.php]
+write by: @arthurferreira-dev
+
+Grupo A:
+$palSG = $two + $zero
+$miamiSG = $two - $one
+$portoSG = $one - $two
+$ahlySG = $zero - $two
+
+Grupo B:
+$botafgSG = $two
+$psgSG = $four - $one
+$mdrdSG = $tree - $five
+$seaSG = $two - $five
+
+Grupo C:
+$byrnSG = ($six * $two) - $one
+$benfSG = ($two * $four) - $two
+$bocaSG = $tree - $four
+$auckSG = $zero - ($four * $four)
+
+Grupo D:
+$flaGP = $five
+$flaGC = $one
+$flaSG = $five - $one
+
+$chelGP = $tree
+$chelGC = $tree
+$chelSG = $chelGP - $chelGC
+
+$esperGP = $one
+$esperGC = $two
+$esperSG = $esperGP - $esperGC
+
+$lafcGP = $zero;
+$lafcGC = $two + $one;
+$lafcSG = $lafcGP - $lafcGC;
