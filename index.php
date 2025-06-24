@@ -105,7 +105,7 @@
                 $five = 5;
                 $six = 6;
                 $tree = 3;
-                $round= 2;
+                $round= 3;
 
                 #Saldo de Gols do Times
                 $palSG = $two + $zero;
@@ -113,25 +113,120 @@
                 $portoSG = $one - $two;
                 $ahlySG = $zero - $two;
 
-                $botafgSG = $two;
-                $psgSG = $four - $one;
-                $mdrdSG = $tree - $five;
-                $seaSG = $two - $five;
+                $botafgSG = $tree - $two;
+                $psgSG = $six - $one;
+                $mdrdSG = $four - $five;
+                $seaSG = $two - (3.5 * $two);
 
                 $byrnSG = ($six * $two) - $one;
                 $benfSG = ($two * $four) - $two;
                 $bocaSG = $tree - $four;
                 $auckSG = $zero - ($four * $four);
+
+                $flaGP = $five;
+                $flaGC = $one;
+                $flaSG = $flaGP - $flaGC;
+                $chelGP = $tree;
+                $chelGC = $tree;
+                $chelSG = $chelGP - $chelGC;
+                $esperGP = $one;
+                $esperGC = $two;
+                $esperSG = $esperGP - $esperGC;
+                $lafcGP = $zero;
+                $lafcGC = $two + $one;
+                $lafcSG = $lafcGP - $lafcGC;
+                $riverGP = $tree;
+                $riverGC = $one;
+                $riverSG = $riverGP - $riverGC;
+                $interGP = $tree;
+                $interGC = $two;
+                $interSG = $interGP - $interGC;
+                $monteGP = $one;
+                $monteGC = $one;
+                $monteSG = $monteGP - $monteGC;
+                $urawaGP = $two;
+                $urawaGC = $five;
+                $urawaSG = $urawaGP - $urawaGC;
+                $fluGP = $four;
+                $fluGC = $two;
+                $fluSG = $fluGP - $fluGC;
+                $boruGP = $four;
+                $boruGC = $tree;
+                $boruSG = $boruGP - $boruGC;
+                $mameGP = $four;
+                $mameGC = $four;
+                $mameSG = $mameGP - $mameGC;
+                $ulsanGP = $two;
+                $ulsanGC = $five;
+                $ulsanSG = $ulsanGP - $ulsanGC;
+                $juvenGP = $tree*$tree;
+                $juvenGC = $one;
+                $juvenSG = $juvenGP - $juvenGC;
+                $cityGP = $two*$four;
+                $cityGC = $zero;
+                $citySG = $cityGP - $cityGC;
+                $casaGP = $one;
+                $casaGC = $six;
+                $casaSG = $casaGP - $casaGC;
+                $ainGP = $zero;
+                $ainGC = ($five * $two) + $one;
+                $ainSG = $ainGP - $ainGC;
+                $realGP = $four;
+                $realGC = $two;
+                $realSG = $realGP - $realGC;
+                $salzGP = $two;
+                $salzGC = $one;
+                $salzSG = $salzGP - $salzGC;
+                $hilalGP = $one;
+                $hilalGC = $one;
+                $hilalSG = $hilalGP - $hilalGC;
+                $pachucaGP = $two;
+                $pachucaGC = $five;
+                $pachucaSG = $pachucaGP - $pachucaGC;
+
+                # Grupos/Groups
+                $groupA = 'Grupo A';
+                $groupB = 'Grupo B';
+                $groupC = 'Grupo C';
+                $groupD = 'Grupo D';
+                $groupE = 'Grupo E';
+                $groupF = 'Grupo F';
+                $groupG = 'Grupo G';
+                $groupH = 'Grupo H';
             ?>
+
             <h1 style="text-align: center; margin-top: 12px; margin-bottom: 5.6px;">Classificação:</h1>
-            <p style="text-align: center;">Atualizada a cada <strong><?=$timer?></strong></p>
+            <p style="text-align: center; margin-bottom: 5.6px;">Atualizada a cada <strong><?=$timer?></strong></p>
+            <p>
+                <div style="
+                margin:auto;
+                text-align:center;
+                background-color: lightgreen;
+                width: 120px;
+                padding: 3.6px;
+                margin-bottom: 4.5px;
+                ">
+                    P = Passou
+                </div>
+                <div style="
+                margin:auto;
+                text-align:center;
+                background-color: lightcoral;
+                width: 120px;
+                padding: 3.6px;
+                ">
+                    F = Fora
+                </div>
+            </p>
 
             <br>
 
-            <h1 style="margin-bottom: 6px;">Grupo A</h1>
-            <table>
+            <table style="background-color:#919191; margin: auto;">
+                <caption style="background-color:#919191; border-bottom: 1px solid #000; padding: 4px;">
+                    <h1 style="margin-bottom: 6px;"><?=$groupA?></h1>
+                </caption>
                 <tbody>
-                    <tr>
+                    <tr style="border-bottom: 1px solid #000; background-color: #a5a5a5;">
                         <td style="text-align: center;">POS</td>
                         <td>Time</td>
                         <td style="text-align: center;"><abbr title="Nacionalidade">NAC</abbr></td>
@@ -144,7 +239,7 @@
                         <td>GC</td>
                         <td>SG</td>
                     </tr>
-                    <tr class="center">
+                    <tr class="center" style="border-bottom: 1px solid #000;">
                         <td>1</td>
                         <td class="palmeiras"><?=$palmeiras?></td>
                         <td><?=$br?></td>
@@ -157,7 +252,7 @@
                         <td><?=$zero?></td>
                         <td><?=$palSG?></td> <!--$palSG-->
                     </tr>
-                    <tr class="center">
+                    <tr class="center" style="border-bottom: 1px solid #000;">
                         <td>2</td>
                         <td class="miami"><?=$miami?></td>
                         <td><?=$es?></td>
@@ -170,7 +265,7 @@
                         <td><?=$one?></td>
                         <td><?=$miamiSG?></td> <!--$miamiSG-->
                     </tr>
-                    <tr class="center">
+                    <tr class="center" style="border-bottom: 1px solid #000;">
                         <td>3</td>
                         <td class="porto"><?=$porto?></td>
                         <td><?=$pt?></td>
@@ -201,10 +296,12 @@
 
             <br>
 
-            <h1 style="margin-bottom: 6px;">Grupo B</h1>
-            <table>
+            <table style="background-color:#919191; margin: auto;">
+                <caption style="background-color:#919191; border-bottom: 1px solid #000; padding: 4px;">
+                    <h1 style="margin-bottom: 6px;"><?=$groupB?></h1>
+                </caption>
                 <tbody>
-                    <tr>
+                    <tr style="border-bottom: 1px solid #000; background-color: #a5a5a5;">
                         <td style="text-align: center;">POS</td>
                         <td>Time</td>
                         <td style="text-align: center;"><abbr title="Nacionalidade">NAC</abbr></td>
@@ -217,24 +314,11 @@
                         <td>GC</td>
                         <td>SG</td>
                     </tr>
-                    <tr class="center">
+                    <tr class="center" style="border-bottom: 1px solid #000; background-color: lightgreen;">
                         <td>1</td>
-                        <td class="botafogo"><?=$botafogo?></td>
-                        <td><?=$br?></td>
-                        <td><?=$six?></td>
-                        <td><?=$round?></td>
-                        <td><?=$two?></td>
-                        <td><?=$zero?></td>
-                        <td><?=$zero?></td>
-                        <td><?=$tree?></td>
-                        <td><?=$one?></td>
-                        <td><?=$botafgSG?></td> <!--$botafgSG-->
-                    </tr>
-                    <tr class="center">
-                        <td>2</td>
                         <td class="psg"><?=$psg?></td>
                         <td><?=$fra?></td>
-                        <td><?=$tree?></td>
+                        <td><?=$tree*$two?></td>
                         <td><?=$round?></td>
                         <td><?=$one?></td>
                         <td><?=$zero?></td>
@@ -243,11 +327,24 @@
                         <td><?=$one?></td>
                         <td><?=$psgSG?></td> <!--$psgSG-->
                     </tr>
-                    <tr class="center">
+                    <tr class="center" style="border-bottom: 1px solid #000; background-color: lightgreen;">
+                        <td>2</td>
+                        <td class="botafogo"><?=$botafogo?></td>
+                        <td><?=$br?></td>
+                        <td><?=$six?></td>
+                        <td><?=$round?></td>
+                        <td><?=$two?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$tree?></td>
+                        <td><?=$two?></td>
+                        <td><?=$botafgSG?></td> <!--$botafgSG-->
+                    </tr>
+                    <tr class="center" style="border-bottom: 1px solid #000; background-color: lightcoral;">
                         <td>3</td>
                         <td class="madrid"><?=$madrid?></td>
                         <td><?=$ep?></td>
-                        <td><?=$tree?></td>
+                        <td><?=$six?></td>
                         <td><?=$round?></td>
                         <td><?=$one?></td>
                         <td><?=$zero?></td>
@@ -256,7 +353,7 @@
                         <td><?=$five?></td>
                         <td><?=$mdrdSG?></td> <!--$mdrdSG-->
                     </tr>
-                    <tr class="center">
+                    <tr class="center" style="background-color: lightcoral;">
                         <td>4</td>
                         <td class="seattle"><?=$seattle?></td>
                         <td><?=$es?></td>
@@ -266,7 +363,7 @@
                         <td><?=$zero?></td>
                         <td><?=$two?></td>
                         <td><?=$two?></td>
-                        <td><?=$five?></td>
+                        <td><?=$five+$two?></td>
                         <td><?=$seaSG?></td> <!--$seaSG-->
                     </tr>
                 </tbody>
@@ -274,10 +371,12 @@
 
             <br>
 
-            <h1 style="margin-bottom: 6px;">Grupo C</h1>
-            <table>
+            <table style="background-color: #919191; margin: auto;">
+                <caption style="background-color: #919191; border-bottom: 1px solid #000; padding: 4px;">
+                    <h1 style="margin-bottom: 6px;"><?=$groupC?></h1>
+                </caption>
                 <tbody>
-                    <tr>
+                    <tr style="border-bottom: 1px solid #000; background-color: #a5a5a5;">
                         <td style="text-align: center;">POS</td>
                         <td>Time</td>
                         <td style="text-align: center;"><abbr title="Nacionalidade">NAC</abbr></td>
@@ -290,7 +389,7 @@
                         <td>GC</td>
                         <td>SG</td>
                     </tr>
-                    <tr class="center">
+                    <tr class="center" style="border-bottom: 1px solid #000; background-color: lightgreen;">
                         <td>1</td>
                         <td><?=$bayern?></td>
                         <td><?=$ger?></td>
@@ -303,7 +402,7 @@
                         <td><?=$one?></td>
                         <td><?=$byrnSG?></td> <!--$byrnSG-->
                     </tr>
-                    <tr class="center">
+                    <tr class="center" style="border-bottom: 1px solid #000;">
                         <td>2</td>
                         <td><?=$benfica?></td>
                         <td><?=$pt?></td>
@@ -316,7 +415,7 @@
                         <td><?=$two?></td>
                         <td><?=$benfSG?></td>
                     </tr>
-                    <tr class="center">
+                    <tr class="center" style="border-bottom: 1px solid #000;">
                         <td>3</td>
                         <td><?=$boca?></td>
                         <td><?=$arg?></td>
@@ -329,7 +428,7 @@
                         <td><?=$four?></td>
                         <td><?=$bocaSG?></td>
                     </tr>
-                    <tr class="center">
+                    <tr class="center" style="background-color: lightcoral;">
                         <td>4</td>
                         <td><?=$auckland?></td>
                         <td><?=$nzl?></td>
@@ -346,11 +445,13 @@
             </table>
 
             <br>
-
-            <h1 style="margin-bottom: 6px;">Grupo D</h1>
-            <table>
+   
+            <table style="background-color: #919191; margin: auto;">
+                <caption style="background-color: #919191; border-bottom: 1px solid #000; padding: 4px;">
+                    <h1 style="margin-bottom: 6px;"><?=$groupD?></h1>
+                </caption>
                 <tbody>
-                    <tr>
+                    <tr style="border-bottom: 1px solid #000; background-color: #a5a5a5;">
                         <td style="text-align: center;">POS</td>
                         <td>Time</td>
                         <td style="text-align: center;"><abbr title="Nacionalidade">NAC</abbr></td>
@@ -363,7 +464,7 @@
                         <td>GC</td>
                         <td>SG</td>
                     </tr>
-                    <tr class="center">
+                    <tr class="center" style="border-bottom: 1px solid #000; background-color: lightgreen;" >
                         <td>1</td>
                         <td><?=$flamengo?></td>
                         <td><?=$br?></td>
@@ -372,11 +473,11 @@
                         <td><?=$round?></td>
                         <td><?=$zero?></td>
                         <td><?=$zero?></td>
-                        <td><?=$five?></td>
-                        <td><?=$one?></td>
-                        <td><?=$five-$one?></td>
+                        <td><?=$flaGP?></td>
+                        <td><?=$flaGC?></td>
+                        <td><?=$flaSG?></td>
                     </tr>
-                    <tr class="center">
+                    <tr class="center" style="border-bottom: 1px solid #000;">
                         <td>2</td>
                         <td><?=$chelsea?></td>
                         <td><?=$eng?></td>
@@ -385,11 +486,11 @@
                         <td><?=$one?></td>
                         <td><?=$zero?></td>
                         <td><?=$one?></td>
-                        <td><?=$tree?></td>
-                        <td><?=$tree?></td>
-                        <td><?=$tree-$tree?></td>
+                        <td><?=$chelGP?></td>
+                        <td><?=$chelGC?></td>
+                        <td><?=$chelSG?></td>
                     </tr>
-                    <tr class="center">
+                    <tr class="center" style="border-bottom: 1px solid #000;">
                         <td>3</td>
                         <td><?=$esperance?></td>
                         <td><?=$mar?></td>
@@ -398,8 +499,11 @@
                         <td><?=$one?></td>
                         <td><?=$zero?></td>
                         <td><?=$one?></td>
+                        <td><?=$esperGP?></td>
+                        <td><?=$esperGC?></td>
+                        <td><?=$esperSG?></td>
                     </tr>
-                    <tr class="center">
+                    <tr class="center" style="background-color: lightcoral;">
                         <td>4</td>
                         <td><?=$angeles?></td>
                         <td><?=$es?></td>
@@ -408,6 +512,309 @@
                         <td><?=$zero?></td>
                         <td><?=$zero?></td>
                         <td><?=$round?></td>
+                        <td><?=$lafcGP?></td>
+                        <td><?=$lafcGC?></td>
+                        <td><?=$lafcSG?></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <table style="background-color: #919191; margin: auto;">
+                <caption style="background-color: #919191; border-bottom: 1px solid #000; padding: 4px;">
+                    <h1 style="margin-bottom: 6px;"><?=$groupE?></h1>
+                </caption>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #000; background-color: #a5a5a5;">
+                        <td style="text-align: center;">POS</td>
+                        <td>Time</td>
+                        <td style="text-align: center;"><abbr title="Nacionalidade">NAC</abbr></td>
+                        <td>PTS</td>
+                        <td>PJ</td>
+                        <td>V</td>
+                        <td>E</td>
+                        <td>D</td>
+                        <td>GP</td>
+                        <td>GC</td>
+                        <td>SG</td>
+                    </tr>
+                    <tr class="center" style="border-bottom: 1px solid #000;">
+                        <td>1</td>
+                        <td><?=$river?></td>
+                        <td><?=$arg?></td>
+                        <td><?=$four?></td>
+                        <td><?=$round?></td>
+                        <td><?=$one?></td>
+                        <td><?=$one?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$riverGP?></td>
+                        <td><?=$riverGC?></td>
+                        <td><?=$riverSG?></td>
+                    </tr>
+                    <tr class="center" style="border-bottom: 1px solid #000;">
+                        <td>2</td>
+                        <td><?=$inter?></td>
+                        <td><?=$ita?></td>
+                        <td><?=$four?></td>
+                        <td><?=$round?></td>
+                        <td><?=$one?></td>
+                        <td><?=$one?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$interGP?></td>
+                        <td><?=$interGC?></td>
+                        <td><?=$interSG?></td>
+                    </tr>
+                    <tr class="center" style="border-bottom: 1px solid #000;">
+                        <td>3</td>
+                        <td><?=$monte?></td>
+                        <td><?=$mx?></td>
+                        <td><?=$two?></td>
+                        <td><?=$round?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$two?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$monteGP?></td>
+                        <td><?=$monteGC?></td>
+                        <td><?=$monteSG?></td>
+                    </tr>
+                    <tr class="center" style="background-color: lightcoral;">
+                        <td>4</td>
+                        <td><?=$urawa?></td>
+                        <td><?=$jp?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$round?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$two?></td>
+                        <td><?=$urawaGP?></td>
+                        <td><?=$urawaGC?></td>
+                        <td><?=$urawaSG?></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <table style="background-color: #919191; margin: auto;">
+                <caption style="background-color: #919191; border-bottom: 1px solid #000; padding: 4px;">
+                    <h1 style="margin-bottom: 6px;"><?=$groupF?></h1>
+                </caption>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #000; background-color: #a5a5a5;">
+                        <td style="text-align: center;">POS</td>
+                        <td>Time</td>
+                        <td style="text-align: center;"><abbr title="Nacionalidade">NAC</abbr></td>
+                        <td>PTS</td>
+                        <td>PJ</td>
+                        <td>V</td>
+                        <td>E</td>
+                        <td>D</td>
+                        <td>GP</td>
+                        <td>GC</td>
+                        <td>SG</td>
+                    </tr>
+                    <tr class="center" style="border-bottom: 1px solid #000;">
+                        <td>1</td>
+                        <td><?=$fluminense?></td>
+                        <td><?=$br?></td>
+                        <td><?=$four?></td>
+                        <td><?=$round?></td>
+                        <td><?=$one?></td>
+                        <td><?=$one?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$fluGP?></td>
+                        <td><?=$fluGC?></td>
+                        <td><?=$fluSG?></td>
+                    </tr>
+                    <tr class="center" style="border-bottom: 1px solid #000;">
+                        <td>2</td>
+                        <td><?=$borussia?></td>
+                        <td><?=$ger?></td>
+                        <td><?=$four?></td>
+                        <td><?=$round?></td>
+                        <td><?=$one?></td>
+                        <td><?=$one?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$boruGP?></td>
+                        <td><?=$boruGC?></td>
+                        <td><?=$boruSG?></td>
+                    </tr>
+                    <tr class="center" style="border-bottom: 1px solid #000;">
+                        <td>3</td>
+                        <td><?=$mamelodi?></td>
+                        <td><?=$afs?></td>
+                        <td><?=$tree?></td>
+                        <td><?=$round?></td>
+                        <td><?=$one?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$one?></td>
+                        <td><?=$mameGP?></td>
+                        <td><?=$mameGC?></td>
+                        <td><?=$mameSG?></td>
+                    </tr>
+                    <tr class="center">
+                        <td>4</td>
+                        <td><?=$kpop?></td>
+                        <td><?=$co?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$round?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$two?></td>
+                        <td><?=$ulsanGP?></td>
+                        <td><?=$ulsanGC?></td>
+                        <td><?=$ulsanSG?></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <table style="background-color: #919191; margin: auto;">
+                <caption style="background-color: #919191; border-bottom: 1px solid #000; padding: 4px;">
+                    <h1 style="margin-bottom: 6px;"><?=$groupG?></h1>
+                </caption>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #000; background-color: #a5a5a5;">
+                        <td style="text-align: center;">POS</td>
+                        <td>Time</td>
+                        <td style="text-align: center;"><abbr title="Nacionalidade">NAC</abbr></td>
+                        <td>PTS</td>
+                        <td>PJ</td>
+                        <td>V</td>
+                        <td>E</td>
+                        <td>D</td>
+                        <td>GP</td>
+                        <td>GC</td>
+                        <td>SG</td>
+                    </tr>
+                    <tr class="center" style="border-bottom: 1px solid #000; background-color: lightgreen;">
+                        <td>1</td>
+                        <td><?=$juventus?></td>
+                        <td><?=$ita?></td>
+                        <td><?=$six?></td>
+                        <td><?=$round?></td>
+                        <td><?=$two?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$juvenGP?></td>
+                        <td><?=$juvenGC?></td>
+                        <td><?=$juvenSG?></td>
+                    </tr>
+                    <tr class="center" style="border-bottom: 1px solid #000; background-color: lightgreen;">
+                        <td>2</td>
+                        <td><?=$city?></td>
+                        <td><?=$eng?></td>
+                        <td><?=$tree*$two?></td>
+                        <td><?=$round?></td>
+                        <td><?=$two?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$cityGP?></td>
+                        <td><?=$cityGC?></td>
+                        <td><?=$citySG?></td>
+                    </tr>
+                    <tr class="center" style="border-bottom: 1px solid #000; background-color: lightcoral;">
+                        <td>3</td>
+                        <td><?=$casablanca?></td>
+                        <td><?=$mar?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$round?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$two?></td>
+                        <td><?=$casaGP?></td>
+                        <td><?=$casaGC?></td>
+                        <td><?=$casaSG?></td>
+                    </tr>
+                    <tr class="center" style="background-color: lightcoral;">
+                        <td>4</td>
+                        <td><?=$ain?></td>
+                        <td><?=$eau?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$round?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$one?></td>
+                        <td><?=$ainGP?></td>
+                        <td><?=$ainGC?></td>
+                        <td><?=$ainSG?></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <table style="background-color: #919191; margin: auto;">
+                <caption style="background-color: #919191; border-bottom: 1px solid #000; padding: 4px;">
+                    <h1 style="margin-bottom: 6px;"><?=$groupH?></h1>
+                </caption>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #000; background-color: #a5a5a5;">
+                        <td style="text-align: center;">POS</td>
+                        <td>Time</td>
+                        <td style="text-align: center;"><abbr title="Nacionalidade">NAC</abbr></td>
+                        <td>PTS</td>
+                        <td>PJ</td>
+                        <td>V</td>
+                        <td>E</td>
+                        <td>D</td>
+                        <td>GP</td>
+                        <td>GC</td>
+                        <td>SG</td>
+                    </tr>
+                    <tr class="center" style="border-bottom: 1px solid #000;">
+                        <td>1</td>
+                        <td><?=$real?></td>
+                        <td><?=$ep?></td>
+                        <td><?=$four?></td>
+                        <td><?=$round?></td>
+                        <td><?=$one?></td>
+                        <td><?=$one?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$realGP?></td>
+                        <td><?=$realGC?></td>
+                        <td><?=$realSG?></td>
+                    </tr>
+                    <tr class="center" style="border-bottom: 1px solid #000;">
+                        <td>2</td>
+                        <td><?=$salzburg?></td>
+                        <td><?=$aus?></td>
+                        <td><?=$four?></td>
+                        <td><?=$round?></td>
+                        <td><?=$one?></td>
+                        <td><?=$one?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$salzGP?></td>
+                        <td><?=$salzGC?></td>
+                        <td><?=$salzSG?></td>
+                    </tr>
+                    <tr class="center" style="border-bottom: 1px solid #000;">
+                        <td>3</td>
+                        <td><?=$hilal?></td>
+                        <td><?=$ars?></td>
+                        <td><?=$two?></td>
+                        <td><?=$round?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$two?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$hilalGP?></td>
+                        <td><?=$hilalGC?></td>
+                        <td><?=$hilalSG?></td>
+                    </tr>
+                    <tr class="center">
+                        <td>4</td>
+                        <td><?=$pachuca?></td>
+                        <td><?=$mx?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$round?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$zero?></td>
+                        <td><?=$two?></td>
+                        <td><?=$pachucaGP?></td>
+                        <td><?=$pachucaGC?></td>
+                        <td><?=$pachucaSG?></td>
                     </tr>
                 </tbody>
             </table>

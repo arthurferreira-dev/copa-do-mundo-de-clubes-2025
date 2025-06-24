@@ -35,3 +35,71 @@ $esperSG = $esperGP - $esperGC
 $lafcGP = $zero;
 $lafcGC = $two + $one;
 $lafcSG = $lafcGP - $lafcGC;
+
+Grupo E:
+$riverGP = $tree;
+$riverGC = $one;
+$riverSG = $riverGP - $riverGC;
+
+$interGP = $tree;
+$interGC = $two;
+$interSG = $interGP - $interGC;
+
+$monteGP = $one;
+$monteGC = $one;
+$monteSG = $monteGP - $monteGC;
+
+$urawaGP = $two;
+$urawaGC = $five;
+$urawaSG = $urawaGP - $urawaGC;
+
+Grupo F:
+$fluGP = $four;
+$fluGC = $two;
+$fluSG = $fluGP - $fluGC;
+
+$boruGP = $four;
+$boruGC = $tree;
+$boruSG = $boruGP - $boruGC;
+
+$mameGP = $four;
+$mameGC = $four;
+$mameSG = $mameGP - $mameGC;
+
+$ulsanGP = $two;
+$ulsanGC = $five;
+$ulsanSG = $ulsanGP - $ulsanGC;
+
+Grupo G:
+$juvenGP = $tree*$tree;
+$juvenGC = $one;
+$juvenSG = $juvenGP - $juvenGC;
+
+$cityGP = $two;
+$cityGC = $zero;
+$citySG = $cityGP - $cityGC;
+
+$casaGP = $one;
+$casaGC = $six;
+$casaSG = $casaGP - $casaGC;
+
+$ainGP = $zero;
+$ainGC = $five;
+$ainSG = $ainGP - $ainGC;
+
+Grupo H:
+$realGP = $four;
+$realGC = $two;
+$realSG = $realGP - $realGC;
+
+$salzGP = $two;
+$salzGC = $one;
+$salzSG = $salzGP - $salzGC;
+
+$hilalGP = $one;
+$hilalGC = $one;
+$hilalSG = $hilalGP - $hilalGC;
+
+$pachucaGP = $two;
+$pachucaGC = $five;
+$pachucaSG = $pachucaGP - $pachucaGC;

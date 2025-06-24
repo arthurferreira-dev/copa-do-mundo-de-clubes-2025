@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    height: 100vh;
+    background-color: #d3d3d3;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 24;
+    background-image: linear-gradient(to right, #2c2c2c, #232323, #1e1e1e, #181818, #000);
+    padding: 12.56px;
+}
+
+header > h1#title {
+    font-size: 2.34em;
+    background-image: linear-gradient(to right, #f0c960, #eec460, #dcb455, #D1AC2D, #FCD56B);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+img#fifa {
+    display: block;
+    height: 100px;
+    margin: auto;
+}
+
+h1#title {
+    margin-top: 6.7px;
+    text-align: center;
+}
+
+.geral-section {
+    text-align: center;
+}
+
+.space-section {
+    margin-top: 8px;
+}
+
+article#first {
+    margin-top: 12px;
+}
+
+.linha {
+    line-height: 1.4em;
+}
+
+section#ahly {
+    background-color: #e82626;
+    width: 300px;
+}
+
+section#ain {
+    background-color: #483d8b;
+    width: 300px;
+}
+
+section#hilal {
+    background-color: #0000cd;
+    width: 300px;
+    color: #fff;
+}
+
+section#madrid {
+    background-color: #a52a2a;
+    width: 300px;
+}
+
+section {
+    margin: auto;
+    padding: 5px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 6px;
+}
+
+button#btn-back {
+    padding: 8px;
+    margin-top: 12px;
+    background-color: #9932cc;
+    color: #fff;
+    font-size: 1.1em;
+    border-radius: 5.6px;
+    transition-duration: .38s;
+}
+
+button#btn-back:hover {
+    background-color: #8d2ebc;
+    color: #d1d1d1;
+    cursor: pointer;
+}
+
+button#btn-back > a {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
